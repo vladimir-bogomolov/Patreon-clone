@@ -177,3 +177,65 @@ a:hover, a:active, a:visited {
     border-radius: 22px;
     font-size: 1rem;
 }
+
+.artist-wraper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 40px 60px 40px;
+}
+
+.artist-quote {
+    font-size: 1rem;
+}
+
+.artist-photo img {
+    margin: 15px;
+}
+
+.artist-photo p {
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.icons-wraper {
+    background-color: #0C0D11;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    padding: 60px 40px 60px 40px;
+    font-size: 1rem;
+}
+
+.icons-wraper h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.icons-wraper p {
+    margin-bottom: 30px;
+}
+
+.icons-main {
+    text-align: center;
+}
+
+.icons-features {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-feature {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 20px 0;
+}
+
+.feature-text {
+    margin: 0 30px;
+}
+
+.feature-text h2 {
+    margin-bottom: 20px;
+}
