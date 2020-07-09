@@ -13,6 +13,7 @@ body {
 nav {
     display: flex;
     margin: 12px;   
+    /* justify-content: flex-start; */
 }
 
 button {
@@ -48,36 +49,33 @@ a:hover, a:active, a:visited {
 }
 
 .logo {
-    width: 35vw;
+    /* width: 10vw; */
     height: 60px;
-    flex: 1;
+    align-self: flex-start;
+    /* flex-shrink: 2; */
+    flex: 1 1 30px;
 }
 
 .login {
-    width: 50vw;
+    width: 55vw;
     height: 60px;
     padding: 13px;
-    flex: 1;
+    justify-self: self-end;
     display: flex;
     justify-content: flex-end;
     flex-wrap: nowrap;
 }
 
 .login-1 {
-    width: 40px;
-    flex: initial;
+    flex: 0 0 60px;
 }
 
 .login-2 {
-    width: 250px;
-    flex: initial;
-
+    flex: 0 0 165px;
 }
 
 .mobile-nav-icon {
-    width: 10vw;
-    height: 60px;
-    flex: initial;
+    flex: 0 0 30px;
 }
 
 .search {
@@ -107,9 +105,9 @@ a:hover, a:active, a:visited {
     
 }
 
-.mobile-nav-icon i {
+/* .mobile-nav-icon i {
     margin: 15px 0px 15px 10px;
-}
+} */
 
 .logo img {
     margin: 10px 0px 10px 5px;
