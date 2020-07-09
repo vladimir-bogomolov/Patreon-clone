@@ -26,6 +26,8 @@ button {
 
 button:hover {
     cursor: pointer;
+    background-color: #e6442b;
+    transition: 1s;
 }
 
 input {
@@ -67,6 +69,7 @@ a:hover, a:active, a:visited {
 }
 
 .login-1 {
+    padding-top: 10px;
     flex: 0 0 60px;
 }
 
@@ -75,6 +78,7 @@ a:hover, a:active, a:visited {
 }
 
 .mobile-nav-icon {
+    padding-top: 4px;
     flex: 0 0 30px;
 }
 
@@ -108,7 +112,7 @@ a:hover, a:active, a:visited {
     display: flex;
     width: 100%;
     flex-direction: column;
-    background-color: black;
+    background-color: #141518;
     color: white;
 }
 
@@ -147,4 +151,29 @@ a:hover, a:active, a:visited {
 .intro-photos div:nth-child(6) {
     grid-column: 17/24;
     grid-row: 2;
+}
+
+.intro-text {
+    padding: 70px 40px 40px 40px;
+}
+
+.intro-text h1 {
+    font-size: 2.7rem;
+    margin: 0 0 20px 0;
+    line-height: 55px;
+}
+
+.intro-text p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.intro-text button {
+    padding: 5px;
+    height: 45px;
+    width: 180px;
+    margin: 20px 0px 40px 0px;
+    border-radius: 22px;
+    font-size: 1rem;
 }
