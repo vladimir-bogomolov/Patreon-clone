@@ -12,14 +12,16 @@ body {
 
 nav {
     display: flex;
-    margin: 12px;   
-    /* justify-content: flex-start; */
+    margin: 10px;   
 }
 
 button {
     border: none; 
     outline: none;
-    
+    background-color: #E7513B;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
 }
 
 button:hover {
@@ -49,10 +51,8 @@ a:hover, a:active, a:visited {
 }
 
 .logo {
-    /* width: 10vw; */
     height: 60px;
     align-self: flex-start;
-    /* flex-shrink: 2; */
     flex: 1 1 30px;
 }
 
@@ -85,14 +85,9 @@ a:hover, a:active, a:visited {
 
 .login button {
     padding: 5px;
-    background-color: #E7513B;
-    color: white;
     height: 35px;
     width: 150px;
-    border-radius: 15px;
-    font-weight: bold;
     margin: 0px 0px 0px 5 px;
-    
 }
 
 .search-line {
@@ -105,11 +100,51 @@ a:hover, a:active, a:visited {
     
 }
 
-/* .mobile-nav-icon i {
-    margin: 15px 0px 15px 10px;
-} */
-
 .logo img {
     margin: 10px 0px 10px 5px;
 }
 
+.intro-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.intro-photos {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.intro-photos div img {
+    width: 100%;
+}
+
+.intro-photos div:first-child {
+    grid-column: 2/9;
+    grid-row: 1;
+}
+
+.intro-photos div:nth-child(2) {
+    grid-column: 10/18;
+    grid-row: 1;
+}
+.intro-photos div:nth-child(3) {
+    grid-column: 19/25;
+    grid-row: 1;
+}
+
+.intro-photos div:nth-child(4) {
+    grid-column: 1/9;
+    grid-row: 2;
+}
+.intro-photos div:nth-child(5) {
+    grid-column: 10/16;
+    grid-row: 2;
+}
+.intro-photos div:nth-child(6) {
+    grid-column: 17/24;
+    grid-row: 2;
+}
