@@ -5,6 +5,10 @@
     flex-wrap: wrap;
 }
 
+html {
+    font-size: 16px;
+}
+
 h1 {
     
     font-size: 2.5rem;
@@ -12,12 +16,16 @@ h1 {
 
 body {
     font-family: sans-serif;
-    font-size: 14px;
+    
 }
 
 nav {
     display: flex;
-    margin: 10px;   
+    padding: 10px;  
+    position: fixed; 
+    background-color: white;
+    z-index: 10;
+    width: 100%;
 }
 
 button {
@@ -57,14 +65,18 @@ a:hover, a:active, a:visited {
     color: black;
 }
 
+.navigation {
+    display: none;
+}
+
 .logo {
     height: 60px;
     align-self: flex-start;
-    flex: 1 1 30px;
+    flex: 1 1 33px;
 }
 
 .login {
-    width: 55vw;
+    width: 200px;
     height: 60px;
     padding: 13px 0;
     justify-self: self-end;
@@ -84,7 +96,7 @@ a:hover, a:active, a:visited {
 
 .mobile-nav-icon {
     padding: 4px 0 0 8px;
-    flex: 0 0 30px;
+    width: 30px;
 }
 
 .mobile-nav-icon:hover {
@@ -118,6 +130,7 @@ a:hover, a:active, a:visited {
 }
 
 .intro-wrapper {
+    padding-top: 120px;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -292,6 +305,11 @@ a:hover, a:active, a:visited {
     margin-top: 60px;
 }
 
+.who h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
 footer {
     background-color: #141518;
     color: white;
@@ -317,6 +335,7 @@ footer {
 
 .footer-item ul li {
     margin: 8px;
+    font-size: 0.9rem;
 }
 
 .footer-item ul li:first-child {
@@ -431,6 +450,34 @@ footer a, footer a:hover, footer a:active, footer a:visited {
 
 @media screen and (min-width: 860px) {
 
+    
+
+    .artist-quote {
+        padding-right: 10%;
+    }
+
+    .icons-main {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+    .who button {
+        left: 30%;
+        width: 40%;
+        height: 10%;
+        font-size: 1rem;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .intro-wrapper {
+        padding-top: 60px;
+    }
+
     .mobile-nav-icon {
         display: none;
     }
@@ -440,9 +487,82 @@ footer a, footer a:hover, footer a:active, footer a:visited {
     }
 
     .login {
-        width: 200px;
         order: 3;
         
+    }
+
+    .logo {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .navigation {
+        display: flex;
+        align-self: center;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .dropdown a:hover {
+        text-decoration: none;
+    }
+
+    .dropdown a {
+        padding: 0 15px;
+    }
+
+    .dropdown p {
+        padding: 20px 15px;
+    }
+
+    .navigation li {
+        display: block;
+        margin: 0 10px;
+    }
+
+    .dropdown li {
+        margin: 0;
+    }
+
+    .dropdown li:hover {
+        background-color: rgb(233, 232, 232);
+    }
+
+    .navigation li:hover {
+        cursor: pointer;
+    }
+
+    .navigation li:nth-child(1) a:hover, .navigation li:nth-child(2) a:hover, .navigation li:nth-child(4) a:hover {
+        text-decoration: none;
+    }
+
+    ul li ul {
+        display: none;
+        position: absolute;
+        background-color: white;
+        padding-top: 30px;
+    }
+
+    .navigation li:hover > ul, .navigation li ul:hover {
+        display: block;
+    }
+
+    ul li ul li {
+        padding-top: 10px;
+    }
+
+    .first li {
+        width: 200px;
+    }
+
+    .second {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
+    .second li, .third li {
+        width: 180px;
+        padding: 20px 0;
     }
 
     .search {
@@ -490,22 +610,6 @@ footer a, footer a:hover, footer a:active, footer a:visited {
         grid-row: 1;
     }
 
-    .artist-quote {
-        padding-right: 10%;
-    }
-
-    .icons-main {
-        padding-right: 20%;
-        padding-left: 20%;
-    }
-
-    .who button {
-        left: 30%;
-        width: 40%;
-        height: 10%;
-        font-size: 1rem;
-    }
-
     .footer {
         flex-direction: row;
         flex-wrap: wrap;
@@ -531,3 +635,4 @@ footer a, footer a:hover, footer a:active, footer a:visited {
     }
 
 }
+
