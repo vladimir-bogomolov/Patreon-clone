@@ -26,6 +26,8 @@ nav {
     background-color: white;
     z-index: 10;
     width: 100%;
+    font-size: 0.9rem;
+    border-bottom: rgba(202, 201, 201, 0.822) solid 0.1px;
 }
 
 button {
@@ -551,8 +553,8 @@ footer a, footer a:hover, footer a:active, footer a:visited {
         padding-top: 10px;
     }
 
-    .first li {
-        width: 200px;
+    .first li, .third li {
+        width: 200px !important;
     }
 
     .second {
@@ -561,8 +563,14 @@ footer a, footer a:hover, footer a:active, footer a:visited {
     }
 
     .second li, .third li {
-        width: 180px;
+        width: 250px;
         padding: 20px 0;
+    }
+
+    .nav-icon {
+        color: blue;
+        margin-right: 10px;
+        
     }
 
     .search {
